@@ -9,6 +9,10 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.get('/usuario', function(req, res) {
+    res.json('Get Usuarios');
+});
+
 app.get('/usuario/:id', function(req, res) {
     res.json('Get Usuario');
 });
