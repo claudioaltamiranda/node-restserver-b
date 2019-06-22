@@ -9,11 +9,11 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get('/usuario', function(req, res) {
+app.get('/usuario/:id', function(req, res) {
     res.json('Get Usuario');
 });
 
-app.post('/usuario/:id', function(req, res) {
+app.post('/usuario', function(req, res) {
     let id = req.params.id;
     let body = req.body;
 
@@ -28,11 +28,11 @@ app.post('/usuario/:id', function(req, res) {
     });
 });
 
-app.put('/usuario', function(req, res) {
+app.put('/usuario/:id', function(req, res) {
     res.json('put Usuario');
 });
 
-app.delete('/usuario', function(req, res) {
+app.delete('/usuario/:id', function(req, res) {
     res.json('delete Usuario');
 });
 
