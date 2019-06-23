@@ -19,7 +19,7 @@ let urlDB;
 if (process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://localhost:27017/repaso';
 } else {
-    urlDB = 'mongodb+srv://camellocorto:l12asup@cluster0-u37ql.mongodb.net/repaso'
+    urlDB = process.env.MONGO_URI;
 };
 
 
