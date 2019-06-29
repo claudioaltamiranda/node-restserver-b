@@ -1,0 +1,5 @@
+
+Client ID
+701276152541-kkqabaj5cmiq0sc5ofcugahchr57fd8c.apps.googleusercontent.com
+Client Secret
+0EPihFiUJR087huKNGQhTPP3
